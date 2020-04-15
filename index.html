@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- Lesson: https://medium.com/@michael.karen/learning-modern-javascript-with-tetris-92d532bcd057-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Tetris JS</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+     <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="game__container">
+        <canvas id="game__board_id" class="game__board"></canvas>
+        <div class="game__controls">
+            <h1>Tetris JS</h1>
+            <h2>Lines: <span id="game_lines_id">0</span></h2>
+            <h2>Score: <span id="game__score_id">0</span></h2>
+            <h2>Level: <span id="game__level_id">0</span></h2>
+        </div>
+        <canvas id="game__next_id" class="game__next"></canvas>
+
+        <button onclick="playGame()" class="btn btn__play" id="btn__play_id">Start</button>
+    </div>
+
+   <div class="game__overlay" id="game__overlay_id">
+        <div>
+            <h1 id=overlay__title_id>Paused</h1>
+            <button onclick="playGame()" class="btn btn__play">Play</button>
+            <button onclick="restartGame()" class="btn btn__restart">Restart Game</button>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
